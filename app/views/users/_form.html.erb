@@ -15,8 +15,14 @@
   <%= f.input :email, label: "Email Address", input_html: { class: 'span12' }  %>
   <%= f.input :phone_number, input_html: { class: 'span12' }  %>
 
-  <% if request.path == "/" %>
-    <%= f.input :topics, :as => :hidden, :input_html => { :value => "Tennis" } %>
+  <% if request.path == "/yoga-classes-singapore" %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Yoga" } %>
+  <% elsif request.path == "/zumba-classes-singapore"  %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Zumba" } %>
+  <% elsif request.path == "/pilates-classes-singapore"  %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Pilates" } %>
+  <% else %>
+    <%= f.input :topic, :as => :hidden, :input_html => { :value => "Yoga" } %>
   <% end %>
   
 <!-- 

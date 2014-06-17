@@ -14,8 +14,8 @@ class OrdersController < ApplicationController
   # GET /users/new
   def new
     @order = Order.new
-    @packages = ['1 one-to-one lesson - $50', '1 two-to-one lesson - $80', '1 four-to-one lesson - $100']
-    @topics = ["Korean", "2", "3"]
+    @packages = ['1 one-to-one lesson - $60', '1 two-to-one lesson - $90', '1 four-to-one lesson - $120']
+    @topics = ["Yoga", "Zumba", "Pilates"]
   end
 
   def create

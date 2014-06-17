@@ -16,7 +16,23 @@ class UsersController < ApplicationController
   end
 
   # GET /users/new
+
   def new
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
+  def yoga
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
+  def zumba
+    @user = User.new
+    @instructors = Instructor.all
+  end
+
+  def pilates
     @user = User.new
     @instructors = Instructor.all
   end

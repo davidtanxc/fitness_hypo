@@ -8,11 +8,15 @@ LanguageHypothesis::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#new'
+  root 'users#yoga'
   get 'thankyou'           => "users#thankyou"
   get 'payment'           => "orders#new"
   get 'soldout'           => "orders#sorry"
 
+  get 'yoga-classes-singapore'                => "users#yoga"
+  get 'zumba-classes-singapore'               => "users#zumba"
+  get 'pilates-classes-singapore'             => "users#pilates"
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
