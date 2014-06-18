@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <table style="width:380px">
+      <p><%= @order.topic %></p>
+      <p><%= @order.name %></p>
+      <p><%= @order.email %></p>
+      <p><%= @order.number %></p>
+      <p><%= @order.address %></p>
+      <p><%= @order.class_type %></p>
+      <p>Start Date: <%= @order.start_date %></p>
+      <p>Start Time: <%= @order.start_time %></p>
+      <p><%= @order.created_at.try(:strftime, '%e %b %y %H:%M')  %></p>
+    </table>
+  </body>
+</html>

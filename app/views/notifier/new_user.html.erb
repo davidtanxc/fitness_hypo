@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <table style="width:380px">
+      <p><%= @user.topic %></p>
+      <p><%= @user.full_name %></p>
+      <p><%= @user.email %></p>
+      <p><%= @user.phone_number %></p>
+      <p><%= @user.created_at.try(:strftime, '%e %b %y %H:%M')  %></p>
+    </table>
+  </body>
+</html>

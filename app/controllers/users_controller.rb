@@ -55,6 +55,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+    Notifier.new_user(@user).deliver
   end
 
   # PATCH/PUT /users/1

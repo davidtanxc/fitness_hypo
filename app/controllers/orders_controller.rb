@@ -30,6 +30,7 @@ class OrdersController < ApplicationController
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
+    Notifier.new_order(@order).deliver
   end
 
   private
