@@ -20,21 +20,29 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def yoga
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def zumba
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   def pilates
     @user = User.new
     @instructors = Instructor.all
+    @title = "Learnemy - Skills marketplace in Singapore"
+    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
   end
 
   # GET /users/1/edit
