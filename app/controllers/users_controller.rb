@@ -27,22 +27,22 @@ class UsersController < ApplicationController
   def yoga
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Yoga Classes in Singapore | Learnemy"
+    @metades = "Find Yoga lessons in Singapore at Learnemy. Just tell us what you want to learn and we'll tell you where to learn yoga in Singapore."
   end
 
   def zumba
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Zumba Classes in Singapore | Learnemy"
+    @metades = "Find Zumba classes in Singapore at Learnemy. Just tell us what you want to learn and we'll tell you where the best Zumba classes are."
   end
 
   def pilates
     @user = User.new
     @instructors = Instructor.all
-    @title = "Learnemy - Skills marketplace in Singapore"
-    @metades = "Learnemy is an online community where you can learn skills from your peers. Take private or group classes from local experts."
+    @title = "Pilates Classes in Singapore | Learnemy"
+    @metades = "Find Pilates classes in Singapore at Learnemy. Just tell us what you want to learn and we'll tell you where the best Pilates classes are."
   end
 
   # GET /users/1/edit
